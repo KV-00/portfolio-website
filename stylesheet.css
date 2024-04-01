@@ -1,0 +1,340 @@
+html {
+  color: #3f3a45;
+  scroll-behavior: smooth;
+  margin: 0;
+  background-attachment: absolute;
+  background-color: #faf3dd;
+  font-size: 18px;
+  font-family: "Seaford", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  filter: blur(3px);
+  background-color: #faf3dd;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #ffdb7e55 25%, transparent 25%) -10px 0/
+      20px 20px,
+    linear-gradient(225deg, #ffdb7e 25%, transparent 25%) -10px 0/ 20px 20px,
+    linear-gradient(315deg, #ffdb7e55 25%, transparent 25%) 0px 0/ 20px 20px,
+    linear-gradient(45deg, #ffdb7e 25%, #faf3dd 25%) 0px 0/ 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(25);
+  z-index: -1;
+  
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  position: static;
+}
+
+.header1 {
+  font-size: 2em;
+  padding: 12px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 12px;
+  margin: 0px 4px;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 50px 0px 0px 0px;
+  font-weight: bold;
+}
+
+.break{
+  height: 15px;
+  border-width: 0px;
+  color: #ffcb47;
+  background-color: #ffcb47;
+}
+
+.state{
+  padding: 15px 0px 0px 0px;
+  font-weight: bold;
+}
+
+.explain{
+  font-style: italic;
+}
+
+.year{
+  float: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cv-content{
+  height: calc(100vh - 123px);
+  width: 100vw;
+  padding: 0px 50px 50px 50px;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+.title {
+  background-color: #ffcb47;
+  scroll-margin-top: 50px;
+}
+
+.top-title {
+  background-color: #ffcb47;
+  scroll-margin-top: 65px;
+}
+
+.imgbox {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: scale(1.05);
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-format {
+  text-align: justify;
+  font-size: 0.8em;
+  padding: 0px 50px 50px 50px;
+}
+
+.about-picture-format {
+  text-align: justify;
+  font-size: 0.8em;
+  padding: 50px 50px 50px 50px;
+}
+
+.control-content {
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-color: #ffcb47;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.header-content {
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  height: 45px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.row:after {
+  text-align: center;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  font-weight: bold;
+  border: none;
+  color: #3f3a45;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2.75vw;
+  white-space: nowrap;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.border {
+  border-top: 4px dashed #faf3dd;
+}
+
+.border-padding {
+  padding: 5px;
+}
+
+.project-showcase-content {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-position: center;
+  height: 100vh;
+}
+
+.content-content {
+  height: calc(100vh - 123px);
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-position: center;
+}
+
+.tab {
+  overflow: hidden;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
+.tab-button {
+  height: 60px;
+  max-height: 14.2vh;
+}
+
+.tab button {
+  background-color: inherit;
+  margin: 0px 1vw;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.tab button:hover {
+  filter: brightness(70%) saturate(5);
+}
+
+.tab button.active {
+  filter: brightness(50%) saturate(6);
+}
+
+.tabcontent {
+  display: none;
+  padding: 5px 5px;
+  width: 100vw;
+  height: calc(100vh - 217px);
+  overflow-y: scroll;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 40vw;
+  padding: 0px 50px 50px 50px;
+  text-align: center;
+  background-size: contain;
+  display: flex;
+}
+
+.project-picture {
+  width: 100%;
+  max-width: 40vw;
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+  background-size: contain;
+}
+
+.project-picture-wide {
+  width: 100%;
+  max-width: 40vw;
+  padding: 50px 5px 50px 5px;
+  text-align: center;
+  background-size: contain;
+}
+
+.project-picture-ultra-wide {
+  width: 100%;
+  max-width: 46vw;
+  padding: 50px 5px 50px 5px;
+  text-align: center;
+  background-size: contain;
+}
+
+.artworks{
+  height: calc(100vh - 123px);
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+.picture {
+  width: 100%;
+  max-width: 50vh;
+  background-size: contain;
+  display: flex;
+}
+
+.picture-tab {
+  overflow: hidden;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
+.picture-column {
+  float: left;
+  width: 20%;
+  padding: 2px;
+}
+
+.picture-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.picture-tab button {
+  background-color: inherit;
+  margin: 0px 1vw;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.picture-tab button:hover {
+  filter: brightness(80%);
+}
+
+.picture-tab button.active {
+  filter: brightness(60%);
+}
+
+.picturecontent {
+  display: none;
+  padding: 5px 5px;
+}

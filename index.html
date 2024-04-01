@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KEVEN VAILLANCOURT</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!-- background stuff -->
+
+    <div class="background"></div>
+    <script>
+      const parallaxElements = document.querySelectorAll(".parallax");
+      window.addEventListener("scroll", function (e) {
+        var scrolledY = window.pageYOffset;
+
+        const background = document.querySelector(".background");
+        background.style.transform =
+          "translate3d(0, " + 0.1 * scrolledY + "px ,0) scale(25)";
+      });
+    </script>
+
+    <!-- Content and Title start -->
+
+    <div class="content">
+      <div class="title">
+        <div class="header1">
+          <strong>
+            KEVEN VAILLANCOURT
+          </strong>
+        </div>
+      </div>
+
+    <!-- Padding -->
+
+      <div class="control-content" id="padding">
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+        <div class="center">
+          <a class="button">ARTWORK</a>
+          <a class="button">PROJECTS</a>
+          <a class="button">CV</a>
+          <a class="button">ABOUT</a>
+        </div>
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+
+      <!-- Sticky header -->
+
+      <div class="control-content" id="myHeader">
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+        <div class="center">
+          <a href="#artwork" class="button">ARTWORK</a>
+          <a href="#projects" class="button">PROJECTS</a>
+          <a href="#CV" class="button">CV</a>
+          <a href="#about" class="button">ABOUT</a>
+        </div>
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        document.getElementById("padding").hidden = true;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky - 68) {
+            header.classList.add("sticky");
+            document.getElementById("padding").hidden = false;
+          } else {
+            header.classList.remove("sticky");
+            document.getElementById("padding").hidden = true;
+          }
+        }
+      </script>
+
+      <!-- ARTWORK -->
+
+      <div id="artwork" class="top-title">
+
+        <div class="header-content">
+          <div class="center">
+            <h2>ARTWORK</h2>
+          </div>
+        </div>
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+
+    <div class="artworks">
+
+      <div class="center">
+        <div class="picture-tab">
+          <div class="picture-row">
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture26')">
+            <img class = "picture" src="images/unity_policy_change_preview.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture27')">
+            <img class = "picture" src="images/gaming_moderation_preview.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture28')">
+            <img class = "picture" src="images/cognitive_behavioral_therapy_preview.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture29')">
+            <img class = "picture" src="images/sportswashing_preview.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture30')">
+            <img class = "picture" src="images/athletes_holidays_preview.png"/>
+          </button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture26" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/unity_policy_change.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Unity Policy Change</p>
+            <p><b>Timefame Created:</b> October 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration was meant to go along with an article discussing the then 
+              proposed and highly controversial pricing changes to the Unity game engine.
+            </p>
+            <p>
+              This illustration features pre-existing characters "Aether" and "Lumine" 
+              from the video game "Genshin Impact", as a nod to the fact that the game 
+              they're featured in runs in Unity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture27" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/gaming_moderation.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Gaming Moderation</p>
+            <p><b>Timefame Created:</b> October 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article about gaming moderation, and 
+              the great deal of toxicity people have to deal with.
+            </p>
+            <p>
+              Notably, the subject's appearance, as well as the piece's background are nods to
+              video game "Counter-Strike Global Offensive", in both in terms of its playable 
+              characters, and the overall aesthetic of its promotional artworks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture28" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/cognitive_behavioral_therapy.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Cognitive Behavioral Therapy</p>
+            <p><b>Timefame Created:</b> November 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article discussing somebody's switch from
+              psychiatric medication, to cognitive behavioural therapy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture29" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-ultra-wide" src="images/sportswashing.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Sportswashing</p>
+            <p><b>Timefame Created:</b> November 2023</p>
+            <p><b>Dimensions:</b> 2491 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article about the controversial practice of
+              sportswashing, and Saudi Arabia's at the time recent decisions to partake in it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture30" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/athletes_holidays.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Athlete's Holidays</p>
+            <p><b>Timefame Created:</b> December 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article concerning student athletes, and what they
+              do over the holidays to stay fit when they aren't playing in any games.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="center">
+        <div class="picture-tab">
+          <div class="picture-row">
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture21')">
+            <img class = "picture" src="images/fantasy_football_preview.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture22')">
+            <img class = "picture" src="images/girl_dinner_preview.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture23')">
+            <img class = "picture" src="images/forest_fires_preview.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture24')">
+            <img class = "picture" src="images/varsity_combat_sports_preview.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture25')">
+            <img class = "picture" src="images/fall_playlists_preview.png"/>
+          </button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture21" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/fantasy_football.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Fantasy Football</p>
+            <p><b>Timefame Created:</b> September 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration was meant to go along with an article about fantasy football.
+              Sadly, it never got published. 
+            </p>
+            <p>
+              While the football player subject would see the light of day on the back of one of
+              the later issues, this full illustration, however, would not.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture22" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/girl_dinner.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Girl Dinner</p>
+            <p><b>Timefame Created:</b> September 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article discussing eating disorders, with
+              this piece and the aforementioned article both referencing the "Girl Dinner" TikTok
+              trend of Summer 2023.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture23" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/forest_fires.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Forest Fires</p>
+            <p><b>Timefame Created:</b> September 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article reporting on the forest fires
+              that ravaged the province of Québec during the summer of 2023.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture24" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/varsity_combat_sports.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Varsity Combat Sports</p>
+            <p><b>Timefame Created:</b> October 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article discussing the possibility of combat 
+              sports becoming a common subject taught at schools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture25" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/fall_playlists.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Fall Playlists</p>
+            <p><b>Timefame Created:</b> October 2023</p>
+            <p><b>Dimensions:</b> 1620 x 1080 pixels</p>
+            <p><b>Context:</b> Professional Work</p>
+            <p>
+              This piece was created while working for the Concordian student newspaper. 
+              This Illustration went along with an article that featured music playlists,
+              hand-picked by the paper's staff.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="picture-tab">
+        <div class="picture-row">
+          <div class="picture-column">
+        <button class="picturelinks" onclick="openPicture(event, 'Picture16')">
+          <img class = "picture" src="images/pomponne_1.png"/>
+        </button>
+          </div>
+          <div class="picture-column">
+        <button class="picturelinks" onclick="openPicture(event, 'Picture17')">
+          <img class = "picture" src="images/pomponne_2.png"/>
+        </button>
+         </div>
+         <div class="picture-column">
+        <button class="picturelinks" onclick="openPicture(event, 'Picture18')">
+          <img class = "picture" src="images/waste_invaders_album_cover.png"/>
+        </button>
+         </div>
+         <div class="picture-column">
+        <button class="picturelinks" onclick="openPicture(event, 'Picture19')">
+          <img class = "picture" src="images/sunny_seed.png"/>
+        </button>
+          </div>
+          <div class="picture-column">
+        <button class="picturelinks" onclick="openPicture(event, 'Picture20')">
+          <img class = "picture" src="images/run_for_the_sun_preview.png"/>
+        </button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Picture16" class="picturecontent">
+    <div class="row">
+      <div class="column">
+        <img class="project-picture" src="images/pomponne_1.png">
+      </div>
+      <div class="column">
+        <div class="about-picture-format">
+          <p><b>Name:</b> Pomponne Concept Art</p>
+          <p><b>Timefame Created:</b> February 2022</p>
+          <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+          <p><b>Context:</b> Professional Work</p>
+          <p>
+            Concept artwork of "Pomponne", the protagonist of the project "Waste Invaders"
+            that I was hired to work on. Ultimately, this drawing would only go on to inform 
+            the arcade cabinet artist, leading it to never really be used for anything else.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Picture17" class="picturecontent">
+    <div class="row">
+      <div class="column">
+        <img class="project-picture" src="images/pomponne_2.png">
+      </div>
+      <div class="column">
+        <div class="about-picture-format">
+          <p><b>Name:</b> Pomponne Concept Art</p>
+          <p><b>Timefame Created:</b> April 2022</p>
+          <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+          <p><b>Context:</b> Professional Work</p>
+          <p>
+            Concept artwork of "Pomponne", the protagonist of the project "Waste Invaders"
+            that I was hired to work on. This drawing would only go on to inform 
+            the arcade cabinet artist, with never being used for anything else.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Picture18" class="picturecontent">
+    <div class="row">
+      <div class="column">
+        <img class="project-picture" src="images/waste_invaders_album_cover.png">
+      </div>
+      <div class="column">
+        <div class="about-picture-format">
+          <p><b>Name:</b> Waste Invaders Album Cover</p>
+          <p><b>Timefame Created:</b> October 2023</p>
+          <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+          <p><b>Context:</b> Personal Work</p>
+          <p>
+            Album cover art for the soundtrack to "Waste Invaders".
+          </p>
+          <p>
+            Despite involving the Waste Invaders game in "some" capacity, I consider this 
+            to be a personal piece as opposed to a professional one, since the decision to 
+            go ahead and publish the game's soundtrack was decided, postmortem, by my friend, 
+            the game's original composer, with the album cover art being made on request.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Picture19" class="picturecontent">
+    <div class="row">
+      <div class="column">
+        <img class="project-picture" src="images/sunny_seed.png">
+      </div>
+      <div class="column">
+        <div class="about-picture-format">
+          <p><b>Name:</b> Sunny Seed Concept Art</p>
+          <p><b>Timefame Created:</b> March 2023</p>
+          <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+          <p><b>Context:</b> Personal Work</p>
+          <p>
+            Concept art for "Sunny Seed", the protagonist of my video game "Run for the Sun". 
+            This piece in particular captures some of Sunny's different poses and facial 
+            expressions, with some of them having been translated from the game's original 
+            pixel art style (since the pixel art came before the concept art, in this case, duh.)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Picture20" class="picturecontent">
+    <div class="row">
+      <div class="column">
+        <img class="project-picture-wide" src="images/run_for_the_sun.png">
+      </div>
+      <div class="column">
+        <div class="about-picture-format">
+          <p><b>Name:</b> Run for the Sun Album Cover</p>
+          <p><b>Timefame Created:</b> June 2023</p>
+          <p><b>Dimensions:</b> 1080 x 864 pixels</p>
+          <p><b>Context:</b> Personal Work</p>
+          <p>
+            Album cover illustration for the soundtrack of my video game "Run for the Sun". 
+            This art was made on request by my friend, the game's composer, with the full version
+            (not pictured) being stretched at the bottom in order to fit the game's logo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="center">
+          <div class="picture-tab">
+            <div class="picture-row">
+              <div class="picture-column">
+            <button class="picturelinks" onclick="openPicture(event, 'Picture11')">
+              <img class = "picture" src="images/hallucinogenic_1.png"/>
+            </button>
+              </div>
+              <div class="picture-column">
+            <button class="picturelinks" onclick="openPicture(event, 'Picture12')">
+              <img class = "picture" src="images/hallucinogenic_2.png"/>
+            </button>
+             </div>
+             <div class="picture-column">
+            <button class="picturelinks" onclick="openPicture(event, 'Picture13')">
+              <img class = "picture" src="images/hallucinogenic_3.png"/>
+            </button>
+             </div>
+             <div class="picture-column">
+            <button class="picturelinks" onclick="openPicture(event, 'Picture14')">
+              <img class = "picture" src="images/hallucinogenic_4.png"/>
+            </button>
+              </div>
+              <div class="picture-column">
+            <button class="picturelinks" onclick="openPicture(event, 'Picture15')">
+              <img class = "picture" src="images/hallucinogenic_5.png"/>
+            </button>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture11" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/hallucinogenic_1.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> HALLUCINOGENIC I</p>
+              <p><b>Timefame Created:</b> January 2022</p>
+              <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+              <p><b>Context:</b> Academic Work</p>
+              <p>
+                Illustration of a Liberty Cap Mushroom. Created for a university assignment that asked
+                to create a series of drawings, with the theming around psychedelic mushrooms being
+                chosen by myself. The original drawing was drawn with markers on paper, and then colored
+                digitally afterwards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture12" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/hallucinogenic_2.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> HALLUCINOGENIC II</p>
+              <p><b>Timefame Created:</b> January 2022</p>
+              <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+              <p><b>Context:</b> Academic Work</p>
+              <p>
+                Illustration of a Fly Agaric. Created for a university assignment that asked
+                to create a series of drawings, with the theming around psychedelic mushrooms being
+                chosen by myself. The original drawing was drawn with markers on paper, and then colored
+                digitally afterwards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture13" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/hallucinogenic_3.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> HALLUCINOGENIC IV</p>
+              <p><b>Timefame Created:</b> February 2022</p>
+              <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+              <p><b>Context:</b> Academic Work</p>
+              <p>
+              <i>
+                (Ignore that HALLUCINOGENIC III was skipped over, that piece was created traditionally,
+                but I just never got around to coloring it. So for the sake of aesthetic consistency,
+                I won't be displaying that piece on here.)
+              </i>
+              </p>
+              <p>
+                Illustration of a Wavy Cap Mushroom. Created for a university assignment that asked
+                to create a series of drawings, with the theming around psychedelic mushrooms being
+                chosen by myself. The original drawing was drawn with markers on paper, and then colored
+                digitally afterwards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture14" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/hallucinogenic_4.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> HALLUCINOGENIC V</p>
+              <p><b>Timefame Created:</b> February 2022</p>
+              <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+               <p><b>Context:</b> Academic Work</p>
+              <p>
+               Illustration of a Spotted Toughshank Mushroom. Created for a university assignment that asked
+                to create a series of drawings, with the theming around psychedelic mushrooms being
+                chosen by myself. The original drawing was drawn with markers on paper, and then colored
+                digitally afterwards.
+               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture15" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/hallucinogenic_5.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> HALLUCINOGENIC VI</p>
+              <p><b>Timefame Created:</b> February 2022</p>
+              <p><b>Dimensions:</b> 1080 x 1080 pixels</p>
+              <p><b>Context:</b> Academic Work</p>
+              <p>
+                Illustration of two mushrooms of the species Psilocybe Tampanensis, also known as 
+                "Philospher's Stones". Created for a university assignment that asked
+                to create a series of drawings, with the theming around psychedelic mushrooms being
+                chosen by myself. The original drawing was drawn with markers on paper, and then colored
+                digitally afterwards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="picture-tab">
+          <div class="picture-row">
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture6')">
+            <img class = "picture" src="images/video_game_mockup_1_preview.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture7')">
+            <img class = "picture" src="images/video_game_mockup_2_preview.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture8')">
+            <img class = "picture" src="images/video_game_mockup_3_preview.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture9')">
+            <img class = "picture" src="images/video_game_mockup_4_preview.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture10')">
+            <img class = "picture" src="images/video_game_mockup_5_preview.png"/>
+          </button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture6" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-wide" src="images/video_game_mockup_1.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Platformer Game Mock-Up</p>
+            <p><b>Timefame Created:</b> February 2020</p>
+            <p><b>Dimensions:</b> 320 x 200 pixels</p>
+            <p><b>Context:</b> Personal Work</p>
+            <p>
+              Mock-up of a hypothetical platformer video game. Color palette, dimensions, 
+              and general aesthetic are based on the Commodore 64.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture7" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture" src="images/video_game_mockup_2.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> 8-bit RPG Mock-Up</p>
+            <p><b>Timefame Created:</b> March 2020</p>
+            <p><b>Dimensions:</b> 160 x 144 pixels</p>
+            <p><b>Context:</b> Personal Work</p>
+            <p>
+            Mock-up of a hypothetical turn-based RPG video game, done in an 8-bit aesthetic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture8" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-ultra-wide" src="images/video_game_mockup_3.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> HD RPG Mock-Up</p>
+            <p><b>Timefame Created:</b> October 2020</p>
+            <p><b>Dimensions:</b> 1140 x 600 pixels</p>
+            <p><b>Context:</b> Personal Work</p>
+            <p>
+              Remake of the 8-bit RPG mock-up, this time hand-drawn digitally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture9" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture-ultra-wide" src="images/video_game_mockup_4.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Frog Adventure Game Mock-Up</p>
+            <p><b>Timefame Created:</b> October 2022</p>
+            <p><b>Dimensions:</b> 1140 x 600 pixels</p>
+             <p><b>Context:</b> Personal Work</p>
+            <p>
+              Mock-up of a hypothetical adventure video game starring a duo of frogs.
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Picture10" class="picturecontent">
+      <div class="row">
+        <div class="column">
+          <img class="project-picture" src="images/video_game_mockup_5.png">
+        </div>
+        <div class="column">
+          <div class="about-picture-format">
+            <p><b>Name:</b> Puzzle Game Mock-Up</p>
+            <p><b>Timefame Created:</b> March 2021</p>
+            <p><b>Dimensions:</b> 160 x 144 pixels</p>
+            <p><b>Context:</b> Personal Work</p>
+            <p>
+              Mock-up of a hypothetical puzzle video game. Aesthetics are based off of
+              the Nintendo Gameboy Color, down to the color palette, and resolution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="center">
+        <div class="picture-tab">
+          <div class="picture-row">
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture1')">
+            <img class = "picture" src="images/green_frog.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture2')">
+            <img class = "picture" src="images/spring_peeper.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture3')">
+            <img class = "picture" src="images/american_toad.png"/>
+          </button>
+           </div>
+           <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture4')">
+            <img class = "picture" src="images/boreal_chorus_frog.png"/>
+          </button>
+            </div>
+            <div class="picture-column">
+          <button class="picturelinks" onclick="openPicture(event, 'Picture5')">
+            <img class = "picture" src="images/wood_frog.png"/>
+          </button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="Picture1" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/green_frog.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> Green Frog</p>
+              <p><b>Timefame Created:</b> March 2021</p>
+              <p><b>Dimensions:</b> 1000 x 1000 pixels</p>
+              <p><b>Context:</b> Personal Work</p>
+              <p>
+                Illustration of a Green Frog (Lithobates Clamitans). Done as part of a series based on frog
+                species found in the province of Québec. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture2" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/spring_peeper.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> Spring Peeper</p>
+              <p><b>Timefame Created:</b> March 2021</p>
+              <p><b>Dimensions:</b> 1000 x 1000 pixels</p>
+              <p><b>Context:</b> Personal Work</p>
+              <p>
+                Illustration of a Spring Peeper (Pseudacris Crucifer). Done as part of a series based on frog
+                species found in the province of Québec. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture3" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/american_toad.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> American Toad</p>
+              <p><b>Timefame Created:</b> March 2021</p>
+              <p><b>Dimensions:</b> 1000 x 1000 pixels</p>
+              <p><b>Context:</b> Personal Work</p>
+              <p>
+                Illustration of an American Toad (Anaxyrus Americanus). Done as part of a series based on frog
+                species found in the province of Québec. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture4" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/boreal_chorus_frog.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> Boreal Chorus Frog</p>
+              <p><b>Timefame Created:</b> March 2021</p>
+              <p><b>Dimensions:</b> 1000 x 1000 pixels</p>
+              <p><b>Context:</b> Personal Work</p>
+              <p>
+                Illustration of a Boreal Chorus Frog (Pseudacris Maculata). Done as part of a series based on frog
+                species found in the province of Québec. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Picture5" class="picturecontent">
+        <div class="row">
+          <div class="column">
+            <img class="project-picture" src="images/wood_frog.png">
+          </div>
+          <div class="column">
+            <div class="about-picture-format">
+              <p><b>Name:</b> Wood Frog</p>
+              <p><b>Timefame Created:</b> July 2021</p>
+              <p><b>Dimensions:</b> 1000 x 1000 pixels</p>
+              <p><b>Context:</b> Personal Work</p>
+              <p>
+                Illustration of a Wood Frog (Lithobates Sylvaticus). Done as part of a series based on frog
+                species found in the province of Québec. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <script>
+            function openPicture(evt, pictureName) {
+            var i, picturecontent, picturelinks;
+            var isOpen = false;
+            picturecontent = document.getElementsByClassName("picturecontent");
+            if (document.getElementById(pictureName).style.display == "block")
+            {
+              isOpen = true; 
+            }      
+            for (i = 0; i < picturecontent.length; i++) {
+              picturecontent[i].style.display = "none";
+            }
+            picturelinks = document.getElementsByClassName("picturelinks");
+            for (i = 0; i < picturelinks.length; i++) {
+              picturelinks[i].className = picturelinks[i].className.replace(
+                " active",
+                ""
+              );
+            }
+            
+            if (!isOpen)
+            {
+              document.getElementById(pictureName).style.display = "block";
+              evt.currentTarget.className += " active";
+              document.getElementById(pictureName).scrollIntoView({ behavior: "smooth", block: "nearest"});
+            }
+          }
+          
+        </script>
+
+      <!-- PROJECTS -->
+
+      <div id="projects" class="title">
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+
+        <div class="header-content">
+          <div class="center">
+            <h2>PROJECTS</h2>
+          </div>
+        </div>
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+
+      <div class="content-content">
+
+        <div class="center">
+          <div class="title">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Project1')" id="defaultOpen">
+                <img src="images/icon1.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project2')">
+                <img src="images/icon2.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project3')">
+                <img src="images/icon3.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project4')">
+                <img src="images/icon4.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project5')">
+                <img src="images/icon5.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project6')">
+                <img src="images/icon6.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project7')">
+                <img src="images/icon7.png" class="tab-button" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Project8')">
+                <img src="images/icon8.png" class="tab-button" />
+              </button>
+            </div>
+
+            <div class="border-padding">
+              <div class="border"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project1" class="tabcontent">
+          <h3>THE MELT</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview1.png">
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> November 2018</p>
+                <p><b>Role in Project:</b> Director, Animator, Script Writer, Voice Actor</p>
+                <p><b>Link to view:</b> <a href="https://drive.google.com/file/d/1_tPLrqLZASLNbLO3DoRkqfU882GwiJso/view?usp=sharing">Google Drive</a></p>
+                <p>
+                  "The Melt" was 3 minute short animated film that I produced
+                  for my ethics class while attending CEGEP de Sept-Îles.
+                </p>
+                <p>
+                  The core theme of the film revolved around the disasterous
+                  concequences of climate change presented throught a humourous
+                  scope, featuring a wealthy polar bear lose his property over
+                  time due to the melting of the polar ice caps.
+                </p>
+                <p>
+                  Software used to create the film were Adobe Photoshop, Adobe
+                  Animate, and Adobe Premiere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project2" class="tabcontent">
+          <h3>TRAIN TO NOWHERE</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview2.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> October 2021</p>
+                <p><b>Role in Project:</b> 2D Artist</p>
+                <p><b>Link to view:</b> <a href="https://moowool.itch.io/train-to-nowhere">Itch.io</a></p>
+                <p>
+                  "Train to Nowhere" is an unfinished video game, created during
+                  Cocojam 2021.
+                </p>
+                <p>
+                  Concieved as a fusion between a puzzle game and a visual novel,
+                  neither of those elements had time to make it into the project's
+                  final build.
+                </p>
+                <p>
+                  This project was my first time ever participating in a game jam. 
+                  Needless to say, it was quite the learning experience.
+                </p>
+                <p>
+                  The game was developed using Godot engine, and the assets I 
+                  created were made both in Microsoft Paint, and Adobe Photoshop.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project3" class="tabcontent">
+          <h3>WASTE INVADERS</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview3.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> May 2022</p>
+                <p><b>Role in Project:</b> 2D Artist, Concept Artist</p>
+                <p><b>Link to view:</b> N/A</p>
+                <p>
+                  "Waste invaders" was an educational video game I produced in
+                  collaboration with a student from the Student Sustainability
+                  Ambassadors Program from Concordia University, along with
+                  other team members, including one of my friends.
+                </p>
+                <p>
+                  The video game was a clone of the arcade game "Space Invaders" with
+                  the main difference being there being 8 projectiles the player
+                  to shoot, each of which could only take down a certain type of
+                  enemy, that in of itself corresponded to 8 different types of
+                  recycling categories.
+                </p>
+                <p>
+                  The goal of the project was to teach players the differences
+                  between different categories of recyclable materials. After the
+                  initial build was finished, it was then uploaded into an arcade
+                  cabinet, built by the team and hand-painted by another artist.
+                </p>
+                <p>
+                  I was the project's 2D artist and used Microsoft Paint and
+                  Adobe Photoshop to create the game's art assets and concept
+                  art, with Unity being the engine used to build the game.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project4" class="tabcontent">
+          <h3>MILDEW</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview4.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> September 2022</p>
+                <p><b>Role in Project:</b> 2D Artist, Level Designer, Programmer</p>
+                <p><b>Link to view:</b> <a href="https://kindaokev.itch.io/mildew">Itch.io</a></p>
+                <p>
+                  "Mildew" is an upcoming video game project I have been working
+                  on along with one of my friends since the fall of 2022.
+                </p>
+                <p>
+                  The project was originally created during the game jam GBJam
+                  10, with my friend and I expanding upon the project much later
+                  on, and currently, to this day.
+                </p>
+                <p>
+                  The video game itself is a puzzle platformer featuring a
+                  sentient puff of mildew wandering around a park clearing it of
+                  its mold. The player is able to jump into differnt plant pots
+                  and take control of them, using the plant's special abilities
+                  to solve puzzles.
+                </p>
+                <p>
+                  I was the artist and level designer for this project.
+                  Microsoft Paint and Adobe Photoshop were used to create the
+                  game's art assets and concept art, and the game ran on the
+                  Unity engine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project5" class="tabcontent">
+          <h3>QUANTUM CAT-ASTROPHE</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview5.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> October 2022</p>
+                <p><b>Role in Project:</b> 2D Artist, Level Designer</p>
+                <p><b>Link to view:</b> <a href="https://armandorusso.itch.io/quantum-cat-astrophe">Itch.io</a></p>
+                <p>
+                  "Quantum Cat-astrophe" is a puzzle platformer originally made
+                  for CGDjam back in October of 2022, and was later expanded
+                  upon for the following month.
+                </p>
+                <p>
+                  The game centers around a cat exploring a seemingly abandoned
+                  underground laboratory searching for one of their friends- who
+                  is a dog. The player would need to kill themselves using traps
+                  placed throughout the level in order to become a ghost and
+                  solve certain puzzles the cat cannot while still alive.
+                </p>
+                <p>
+                  I was the game's artist and also touched up some of the level
+                  desgin as well. I used Microsoft Paint and Adobe Photohop in
+                  order to create the game's art assets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project6" class="tabcontent">
+          <h3>RUN FOR THE SUN</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview6.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> July 2023</p>
+                <p><b>Role in Project:</b> 2D Artist, Level Designer, Programmer</p>
+                <p><b>Link to view:</b> <a href="https://george540.itch.io/run-for-the-sun">Itch.io</a></p>
+                <p>
+                  "Run for the Sun" is a video game that was originally concieved during 
+                  Global Game Jam 2023. Unfortunately, due to technical issues during 
+                  development, the game never got finished in time, and the orignal build 
+                  was unable to be submitted.
+                </p>
+                <p>
+                  However! Despite that hiccup, myself and two other programmers on our team
+                  decided to continue on with developing the game, eventually releasing it in
+                  July 2023.
+                </p>
+                <p>
+                  As for the game itself, "Run for the Sun" is about "Sunny" a sunflower seed
+                  who mysteriously gains a conciousness. From there, the player, using their mouse
+                  controls Sunny by shooting their roots out around the level, to eventually 
+                  climb all the way to the top, as fast as possible.
+                </p>
+                <p>
+                  My role in this project was originally solely as an aritst, however as 
+                  development progressed I began to take on the role of level designer, 
+                  and did a small bit of programming as well. This project was made in Unity,
+                 and I made the game's art with Microsoft Paint and Adobe Photohop.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project7" class="tabcontent">
+          <h3>DEBBEE'S IN DANGER!</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview7.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> November 2023</p>
+                <p><b>Role in Project:</b> 2D Artist</p>
+                <p><b>Link to view:</b> <a href="https://armandorusso.itch.io/debbes-in-danger">Itch.io</a></p>
+                <p>
+                  "Debbee's in Danger!" is a co-op video game made during CGDjam 2023.
+                </p>
+                <p>
+                  In this title, players take upon the role of beekeepers, who are 
+                  tirelessly defending a nymph "Debbee" from wave upon wave of vicious 
+                  hornets, all out to get her. The game has cooperative play as one of
+                  its biggest features, where players have to work together to keep
+                  Debbee safe as long as possible
+                </p>
+                <p>
+                  At the time of updating this portfolio, the only build publically
+                  available is the orginal one published for the game jam. However, some
+                  developments have been made on the game post-jam, so an updated version
+                  is definitely in the works...
+                </p>
+                <p>
+                  The game was created in the Unity Engine, and I used solely Adobe Photoshop
+                   to create all of the game's art and animations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Project8" class="tabcontent">
+          <h3>DIVINE AFFAIRE</h3>
+          <div class="row">
+            <div class="column">
+              <img class="project-image" src="images/preview8.png"/>
+            </div>
+            <div class="column">
+              <div class="about-format">
+                <p><b>Release Date:</b> November 2023</p>
+                <p><b>Role in Project:</b> 2D Artist</p>
+                <p><b>Link to view:</b> <a href="https://lablablab.itch.io/divineaffaire">Itch.io</a></p>
+                <p>
+                  "Divine Affaire", originally "Chroniquer", is a research project based 
+                  around a massive simulation, featuring simulated people interacting 
+                  with each other and living about their lives. The project has a heavy focus 
+                  on emergent narrtives, and getting users to interact with those narratives.
+                </p>
+                <p>
+                  The simulation runs in the Unity Engine, and while the simulation itself is
+                  complete for the time being, the focus of the research project now is to
+                  create a game over-top of it, to act as a front-end to get
+                  users to interact and discover the emergent narratives that the simulation
+                  creates.
+                </p>
+                <p>
+                  I was brought onto the project in the summer of 2023, however, the project
+                  has been going on for a few years before that. 
+                </p>
+                <p>
+                  On this project, I've made a number of art assets, however only 
+                  a few are present in the currently public build, with 99% of them being
+                  for a feature planned to be implemented in the coming months.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+      
+      </script>
+
+        <!-- CV -->
+
+      <div id="CV" class="title">
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+
+        <div class="header-content">
+          <div class="center">
+            <h2>CV</h2>
+          </div>
+        </div>
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+        <div class="center"></div>
+        
+        <div class="cv-content">
+          <h4>GENERAL SKILLS</h4>
+            <hr class="break">
+             <div class="state">
+                Spoken and Written Languages
+              </div>
+              <div class="explain">
+                English, French
+              </div>
+
+              <div class="state">
+                Computer Skills
+              </div>
+              <div class="explain">
+                Microsoft Office Suite, Adobe Suite, Blender, JavaScript, Java, HTML, Maple
+              </div>
+
+              <div class="state">
+                Driver’s License
+              </div>
+              <div class="explain">
+                Class 5
+              </div>
+
+          <h4>EDUCATION</h4>
+            <hr class="break">
+             <div class="state">
+               Bachelor of Fine Arts, specialization in Computation Arts 
+                <span class="year">
+                  2020 to Present 
+                </span>
+            </div>
+              <div class="explain">
+                Concordia University, Montréal
+              </div>
+
+              <div class="state">
+                College Diploma in Natural Sciences
+                <span class="year">
+                  2018 to 2020
+                </span>
+              </div>
+              <div class="explain">
+                CEGEP de Sept-Îles
+              </div>
+
+              <div class="state">
+                High School Diploma
+                <span class="year">
+                  2012 to 2018 
+                </span>
+              </div>
+              <div class="explain">
+                Queen Elizabeth High School, Sept-Îles
+              </div>
+
+          <h4>ACADEMIC MERITS</h4>
+            <hr class="break">
+             <div class="state">
+                Valedictorian (Medal of Governor General) 
+                <span class="year">
+                  2018
+                </span>
+            </div>
+              <div class="explain">
+                Queen Elizabeth High School, Sept-Îles
+              </div>
+
+              <div class="state">
+                Richard J. Gillis Science and Math Award (Best marks in science courses)
+                <span class="year">
+                  2018
+                </span>
+              </div>
+              <div class="explain">
+                Queen Elizabeth High School, Sept-Îles
+              </div>
+
+              <div class="state">
+                Bourse de la Fondation du Cégep de Sept-Îles (Highest grades in high school)
+                <span class="year">
+                  2018
+                </span>
+              </div>
+              <div class="explain">
+                CÉGEP de Sept-Îles 
+              </div>
+
+          <h4>VOLUNTEERING EXPERINCE</h4>
+            <hr class="break">
+             <div class="state">
+               Organisational Assistant
+                <span class="year">
+                  Spring 2023
+                </span>
+            </div>
+              <div class="explain">
+                Art Matters Festival, Montréal
+              </div>
+
+              <div class="state">
+                Attendant and Organizational Assistant
+                <span class="year">
+                  2011 to 2018
+                </span>
+              </div>
+              <div class="explain">
+                Royal Canadian Legion, St-Bruno
+              </div>
+
+            <h4>PROFESSIONAL EXPERIENCE </h4>
+              <hr class="break">
+               <div class="state">
+                  Illustrator
+                  <span class="year">
+                    Summer 2023 to Present
+                  </span>
+              </div>
+                <div class="explain">
+                  The Concordian, Montréal
+                </div>
+  
+                <div class="state">
+                  2D Artist and UI/UX Artist
+                  <span class="year">
+                    Summer 2023 to Present
+                  </span>
+                </div>
+                <div class="explain">
+                  Concordia University - Research Assistant, Montréal
+                </div>
+
+                <div class="state">
+                  Car Washer
+                  <span class="year">
+                    Summer 2023
+                  </span>
+                </div>
+                <div class="explain">
+                  Iron Ore Company of Canada (IOC), Sept-Îles
+                </div>
+
+                <div class="state">
+                  Information Technologies	
+                  <span class="year">
+                    Summer 2022
+                  </span>
+                </div>
+                <div class="explain">
+                  Iron Ore Company of Canada (IOC), Sept-Îles
+                </div>
+
+                <div class="state">
+                  2D Artist and Concept Artist
+                  <span class="year">
+                    Spring 2022
+                  </span>
+                </div>
+                <div class="explain">
+                  Concordia University - Student Sustainability Ambassadors Program, Montréal
+                </div>
+
+                <div class="state">
+                  Purchasing Agent
+                  <span class="year">
+                    Summer 2021
+                  </span>
+                </div>
+                <div class="explain">
+                  Iron Ore Company of Canada (IOC), Sept-Îles
+                </div>
+
+                <div class="state">
+                  Temperature Screener
+                  <span class="year">
+                    Summer 2021
+                  </span>
+                </div>
+                <div class="explain">
+                  Iron Ore Company of Canada (IOC), Sept-Îles
+                </div>
+
+                <div class="state">
+                  Hotel Receptionist
+                  <span class="year">
+                    2020 to 2021
+                  </span>
+                </div>
+                <div class="explain">
+                  Hôtel Mingan, Sept-Îles
+                </div>
+
+                <div class="state">
+                  Gardener
+                  <span class="year">
+                    Summer 2019
+                  </span>
+                </div>
+                <div class="explain">
+                  Les Jardins de Gallix Inc., Sept-Îles
+                </div>
+      </div>
+ 
+      <!-- ABOUT -->
+
+      <div id="about" class="title">
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+        <div class="header-content">
+          <div class="center">
+            <h2>ABOUT</h2>
+          </div>
+        </div>
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+      <div class="content-content">
+        <div class="center">
+          <p>
+            <b>EMAIL</b>
+          </p>
+          <p>
+            vaillancourkeven@gmail.com
+          </p>
+          <p>
+            <b>INSTAGRAM</b>
+          </p>
+          <p>
+            @kindaokev
+          </p>
+          <p>
+            <b>TWITTER</b>
+          </p>
+          <p>
+            @kindaokev
+          </p>
+        </div>
+      </div>
+      <div class="title">
+        <div class="border-padding">
+          <div class="border"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
