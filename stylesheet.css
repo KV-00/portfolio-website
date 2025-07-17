@@ -10,7 +10,7 @@ html {
   background-attachment: absolute;
   background-color: #faf3dd;
   font-size: 18px;
-  font-family: "ReadexPro", sans-serif;
+  font-family: "Seaford", sans-serif;
 }
 
 * {
@@ -28,14 +28,14 @@ body {
 
 .h1 {
   color: #faf3dd;
-  font-size: 4vw;
+  font-size: 2em;
   padding: 12px;
   text-align: center;
 }
 
 h2 {
   color: #faf3dd;
-  font-size: 3vw;
+  font-size: 1.5em;
   text-align: center;
   font-weight: bold;
   padding: 8px 12px;
@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  color: #faf3dd;
+  color: #3f3a45;
   font-size: 1.5em;
   text-align: center;
   font-weight: bold;
@@ -144,7 +144,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   background-position: center;
-  height: 4vh;
+  height: 45px;
 }
 
 .column {
@@ -164,11 +164,11 @@ h4 {
   font-weight: bold;
   border: none;
   color: #faf3dd;
-  padding: 4px 4px;
+  padding: 2.5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size: 16px;
   margin: 5px 2.75vw;
   white-space: nowrap;
   transition: 0.3s;
