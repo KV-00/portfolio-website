@@ -110,16 +110,10 @@ h4 {
   position: relative;
 }
 
-.about-format {
+.project-about {
   text-align: justify;
   font-size: 0.8em;
   padding: 0px 50px 50px 50px;
-}
-
-.about-picture-format {
-  text-align: justify;
-  font-size: 0.8em;
-  padding: 50px 50px 50px 50px;
 }
 
 .control-content {
@@ -211,13 +205,13 @@ h4 {
 
 .tab-button {
   height: 60px;
-  max-height: 14.2vh;
+  max-height: 15vh;
 }
 
 .tab button {
   background-color: inherit;
-  margin: 0px 1vw;
-  float: left;
+  margin: 0px 0.2vw;
+  float: none;
   border: none;
   outline: none;
   cursor: pointer;
@@ -234,44 +228,15 @@ h4 {
 }
 
 .tabcontent {
-  display: none;
-  padding: 5px 5px;
-  width: 100vw;
-  height: calc(100vh - 217px);
   overflow-y: scroll;
 }
 
 .project-image {
   width: 100%;
-  max-width: 40vw;
-  padding: 0px 50px 50px 50px;
   text-align: center;
   background-size: contain;
+  object-fit: cover;
   display: flex;
-}
-
-.project-picture {
-  width: 100%;
-  max-width: 40vw;
-  padding: 50px 50px 50px 50px;
-  text-align: center;
-  background-size: contain;
-}
-
-.project-picture-wide {
-  width: 100%;
-  max-width: 40vw;
-  padding: 50px 5px 50px 5px;
-  text-align: center;
-  background-size: contain;
-}
-
-.project-picture-ultra-wide {
-  width: 100%;
-  max-width: 46vw;
-  padding: 50px 5px 50px 5px;
-  text-align: center;
-  background-size: contain;
 }
 
 .artworks{
@@ -285,12 +250,19 @@ h4 {
   max-width: 50vh;
   background-size: contain;
   display: flex;
+  position: relative;
+  transition: 0.3s;
 }
 
-.picture-tab {
-  overflow: hidden;
-  padding: 5px 5px;
-  display: inline-block;
+.picture-full {
+  display: block;
+  width: auto;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 2;
 }
 
 .picture-column {
@@ -305,6 +277,12 @@ h4 {
   display: table;
 }
 
+.picture-tab {
+  overflow: hidden;
+  padding: 5px 5px;
+  display: inline-block;
+}
+
 .picture-tab button {
   background-color: inherit;
   margin: 0px 1vw;
@@ -312,19 +290,35 @@ h4 {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.25s;
   font-size: 15px;
 }
 
-.picture-tab button:hover {
-  filter: brightness(80%);
+.picture-tab button:hover .picture{
+  filter: brightness(50%);
 }
 
 .picture-tab button.active {
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 
-.picturecontent {
-  display: none;
-  padding: 5px 5px;
+.picture-container button:hover .picture-text {
+  opacity: 1;
+}
+
+.picture-container button.active .picture-text {
+  opacity: 0;
+}
+
+.picture-text {
+  color: white;
+  opacity: 0;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  text-align: center;
+  transition: 0.25s;
 }
