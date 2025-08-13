@@ -12,83 +12,136 @@
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art7')">
           <img class = "art-preview" src="images/illustration_icons/art1_preview.jpg">
-          <div class="art-text"><p>Green Frog</p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>Green Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art6')">
           <img class = "art-preview" src="images/illustration_icons/art1_preview.jpg">
-          <div class="art-text"><p>Green Frog</p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>Green Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art5')">
           <img class = "art-preview" src="images/illustration_icons/art5_preview.jpg">
-          <div class="art-text"><p>Wood Frog</p><p>July 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>Wood Frog</h-art></p><p>July 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art4')">
           <img class = "art-preview" src="images/illustration_icons/art4_preview.jpg">
-          <div class="art-text"><p>Boreal Chorus Frog</p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>Boreal Chorus Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art3')">
           <img class = "art-preview" src="images/illustration_icons/art3_preview.jpg">
-          <div class="art-text"><p>American Toad</p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>American Toad</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
       
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art2')">
           <img class = "art-preview" src="images/illustration_icons/art2_preview.jpg">
-          <div class="art-text"><p>Spring Peeper</p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>Spring Peeper</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art1')">
           <img class = "art-preview" src="images/illustration_icons/art1_preview.jpg">
-          <div class="art-text"><p>Green Frog</p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <div class="art-text"><p><h-art>Green Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
 
-  <script> 
+  <script>
+    // Define variables for tracking tap behavior
+    let tapCount = 0;
+    const tapTimeout = 500; // Time threshold for double-tap (500ms)
+
     function openArt(event, artName) {
       // Open and close the artwork and set its corresponding image source
       var art = document.getElementById("art");
       const artSource = 'images/illustration_full/' + artName + '.jpg';
       document.getElementById('art-full').src = artSource;
+      
       // Toggle the display of the artwork
       if (art.style.display === "none" || art.style.display === "") {
         art.style.display = "block";
         document.querySelector('.artwork').classList.add('active');
+        document.querySelector('.art-full').classList.add('art-appear');
+        document.querySelector('.art-full').classList.remove('art-disappear');
         document.querySelector('.overlay').style.display = "block";
+        document.querySelector('.overlay').classList.add('overlay-appear');
         document.querySelector('body').style.overflow = "hidden";
       } else {
-        art.style.display = "none";
         document.querySelector('.artwork').classList.remove('active');
+        document.querySelector('.art-full').classList.remove('art-appear');
+        document.querySelector('.art-full').classList.add('art-disappear');
         document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.overlay').classList.remove('overlay-appear');
         document.querySelector('body').style.overflow = "auto";
+        setTimeout(function() { 
+          art.style.display = "none";
+        }, 250);
       }
+
       // Prevent event propagation so clicking on the button itself won't trigger the close logic
       event.stopPropagation();
     }
+
+    // Function to handle double tap detection
+    function handleButtonTap(event, artName) {
+      // Check if the user is on a mobile device
+      if (window.innerWidth <= 768) {
+        tapCount++;
+
+        if (tapCount === 1) {
+          // First tap, start the timeout to reset the count
+          setTimeout(() => {
+            tapCount = 0; // Reset tap count after timeout
+          }, tapTimeout);
+        }
+
+        if (tapCount === 2) {
+          // Second tap within the time threshold
+          openArt(event, artName);
+          tapCount = 0; // Reset after successful double tap
+        }
+      } else {
+        // If not on mobile, open the art on the first tap
+        openArt(event, artName);
+      }
+    }
+
     // Close the image when clicking anywhere on the screen
     document.addEventListener('click', function(event) {
       var art = document.getElementById("art");
       // Check if the target is not the artwork or any of the buttons
       if (!art.contains(event.target) && !event.target.closest('.button-class')) {
-        art.style.display = "none";
         document.querySelector('.artwork').classList.remove('active');
+        document.querySelector('.art-full').classList.remove('art-appear');
+        document.querySelector('.art-full').classList.add('art-disappear');
         document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.overlay').classList.remove('overlay-appear');
         document.querySelector('body').style.overflow = "auto";
+        setTimeout(function() { 
+          art.style.display = "none";
+        }, 250);
       }
+    });
+
+    // Add event listener to buttons
+    const buttons = document.querySelectorAll('.button-class');
+    buttons.forEach(button => {
+      button.addEventListener('click', (event) => {
+        const artName = button.getAttribute('data-art-name'); // Get the corresponding art name
+        handleButtonTap(event, artName);
+      });
     });
   </script>
 
