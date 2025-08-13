@@ -48,7 +48,7 @@
     function openArt(event, artName) {
       // Open and close the artwork and set its corresponding image source
       var art = document.getElementById("art");
-      const artSource = 'images/illustration_icons/' + artName + '_preview.jpg';
+      const artSource = 'images/illustration_full/' + artName + '.jpg';
       document.getElementById('art-full').src = artSource;
       // Toggle the display of the artwork
       if (art.style.display === "none" || art.style.display === "") {
