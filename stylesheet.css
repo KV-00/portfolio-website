@@ -22,7 +22,7 @@ html {
 .art-preview {
   display: block;
   width: 100%;
-  max-width: 25vh;
+  max-width: 20vh;
   height: auto;
   margin: 15px;
   transition: 0.3s;
