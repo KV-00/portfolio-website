@@ -58,17 +58,12 @@
         </button>
       </div>
 
-  <script>
-    // Define variables for tracking tap behavior
-    let tapCount = 0;
-    const tapTimeout = 100; // Time threshold for double-tap (500ms)
-
+  <script> 
     function openArt(event, artName) {
       // Open and close the artwork and set its corresponding image source
       var art = document.getElementById("art");
       const artSource = 'images/illustration_full/' + artName + '.jpg';
       document.getElementById('art-full').src = artSource;
-      
       // Toggle the display of the artwork
       if (art.style.display === "none" || art.style.display === "") {
         art.style.display = "block";
@@ -89,35 +84,9 @@
           art.style.display = "none";
         }, 250);
       }
-
       // Prevent event propagation so clicking on the button itself won't trigger the close logic
       event.stopPropagation();
     }
-
-    // Function to handle double tap detection
-    function handleButtonTap(event, artName) {
-      // Check if the user is on a mobile device
-      if (window.innerWidth <= 768) {
-        tapCount++;
-
-        if (tapCount === 1) {
-          // First tap, start the timeout to reset the count
-          setTimeout(() => {
-            tapCount = 0; // Reset tap count after timeout
-          }, tapTimeout);
-        }
-
-        if (tapCount === 2) {
-          // Second tap within the time threshold
-          openArt(event, artName);
-          tapCount = 0; // Reset after successful double tap
-        }
-      } else {
-        // If not on mobile, open the art on the first tap
-        openArt(event, artName);
-      }
-    }
-
     // Close the image when clicking anywhere on the screen
     document.addEventListener('click', function(event) {
       var art = document.getElementById("art");
@@ -133,15 +102,6 @@
           art.style.display = "none";
         }, 250);
       }
-    });
-
-    // Add event listener to buttons
-    const buttons = document.querySelectorAll('.button-class');
-    buttons.forEach(button => {
-      button.addEventListener('click', (event) => {
-        const artName = button.getAttribute('data-art-name'); // Get the corresponding art name
-        handleButtonTap(event, artName);
-      });
     });
   </script>
 
