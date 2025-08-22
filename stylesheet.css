@@ -11,6 +11,76 @@ html {
   background-color: #faf3dd;
   font-size: 18px;
   font-family: "Seaford", sans-serif;
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  position: static;
+}
+
+.website-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 1vmin 0 1vmin;
+  background-color: #ffcb47;
+  background-position: center;
+  text-align: center;
+}
+
+.website-title {
+  color: #faf3dd;
+  font-size: 4vmin;
+  font-weight: bolder;
+}
+
+.title-button {
+  border: 0px solid;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: #faf3dd;
+  color: #ffcb47;
+  padding: 7.5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vmin;
+  margin: 1vmin 2.75vmin;
+  white-space: nowrap;
+  transition: 0.25s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.title-button:hover {
+  background-color: #ffcb47;
+  color: #faf3dd;
+}
+
+.title-button:active, .title-button:focus {
+  background-color: #ffcb47;
+  color: #faf3dd;
+  border-color: #faf3dd;
+  border-width: 5px;
+}
+
+.white-border {
+  border-top: 0.5vmin dashed #faf3dd;
+}
+
+.yellow-border {
+  border-top: 7.5px dashed #ffcb47;
+  margin: 7.5px;
+}
+
+.artwork-content {
+  padding-top: 14.5vmin;
+  height: calc(100vh - 14.5vmin);
+  overflow-y: scroll;
 }
 
 .artwork {
@@ -19,13 +89,21 @@ html {
   justify-content: space-evenly;
 }
 
+.art-section {
+  font-size: 3vmin;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .art-preview {
   display: block;
   width: 100%;
   max-width: 23vh;
   height: auto;
   margin: 15px;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .art-container {
@@ -39,6 +117,7 @@ html {
   width: auto;
   max-width: 90vw;
   height: auto;
+  max-height: 90vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -126,4 +205,52 @@ h-art {
 @keyframes overlay-fadeIn {
   0% { opacity: 0; }
   100% { opacity: 0.5; }
+}
+
+.cv-content{
+  height: calc(100vh - 14.5vmin);
+  padding: 0px 25px 25px;
+  overflow-y: scroll;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  color: #3f3a45;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  color: #3f3a45;
+  font-size: 1.25em;
+  margin: 50px 0px 0px 0px;
+  font-weight: bold;
+}
+
+.break{
+  height: 15px;
+  border-width: 0px;
+  background-color: #ffcb47;
+}
+
+.state{
+  padding: 15px 0px 0px 0px;
+  font-weight: bold;
+}
+
+.explain{
+  font-style: italic;
+}
+
+.year{
+  float: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.title {
+  scroll-margin-top: 50px;
 }

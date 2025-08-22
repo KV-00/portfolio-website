@@ -7,21 +7,108 @@
   </head>
   <body>
     <div class="overlay"></div>
+
+    <div class="website-header">
+      <div class="website-title">
+              - KEVEN VAILLANCOURT -
+      </div>
+      <a href="#artwork" class="title-button">ARTWORK</a>
+      <a href="#CV" class="title-button">CV</a>
+      <div class="white-border"></div>
+    </div>
+
+    <div id="artwork" class="artwork-content">
+
+    <div class = art-section>• MOCKUPS SECTION •</div>
+
     <div class="artwork">
 
       <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art15')">
+          <img class = "art-preview" src="images/illustration_icons/art15_preview.jpg">
+          <div class="art-text"><p><h-art>Mildew Mock-Up</h-art></p><p>September 2022</p><p>160 x 144 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art16')">
+          <img class = "art-preview" src="images/illustration_icons/art16_preview.jpg">
+          <div class="art-text"><p><h-art style="font-size: 1.75vh">Waste Invaders Mock-Up</h-art></p><p>May 2022</p><p>272 x 160 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art13')">
+          <img class = "art-preview" src="images/illustration_icons/art13_preview.jpg">
+          <div class="art-text"><p><h-art>Adventure Game Mock-Up</h-art></p><p>October 2020</p><p>1140 x 600 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art14')">
+          <img class = "art-preview" src="images/illustration_icons/art14_preview.jpg">
+          <div class="art-text"><p><h-art style="font-size: 1.75vh">Puzzle Game Mock-Up</h-art></p><p>February 2020</p><p>160 x 144 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art12')">
+          <img class = "art-preview" src="images/illustration_icons/art12_preview.jpg">
+          <div class="art-text"><p><h-art>RPG Mock-Up</h-art></p><p>March 2020</p><p>1140 x 600 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art11')">
+          <img class = "art-preview" src="images/illustration_icons/art11_preview.jpg">
+          <div class="art-text"><p><h-art>Platformer Game Mock-Up</h-art></p><p>February 2020</p><p>320 x 200 pixels</p></div>
+        </button>
+      </div>
+    </div>
+
+    <div class = art-section>• HALLUCINOGENICS SECTION •</div>
+
+    <div class="artwork">
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art10')">
+          <img class = "art-preview" src="images/illustration_icons/art10_preview.jpg">
+          <div class="art-text"><p><h-art>HALLUCINOGENIC VI</h-art></p><p>February 2022</p><p>1080 x 1080 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art9')">
+          <img class = "art-preview" src="images/illustration_icons/art9_preview.jpg">
+          <div class="art-text"><p><h-art>HALLUCINOGENIC V</h-art></p><p>February 2022</p><p>1080 x 1080 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'art8')">
+          <img class = "art-preview" src="images/illustration_icons/art8_preview.jpg">
+          <div class="art-text"><p><h-art>HALLUCINOGENIC IV</h-art></p><p>February 2022</p><p>1080 x 1080 pixels</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art7')">
-          <img class = "art-preview" src="images/illustration_icons/art1_preview.jpg">
-          <div class="art-text"><p><h-art>Green Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <img class = "art-preview" src="images/illustration_icons/art7_preview.jpg">
+          <div class="art-text"><p><h-art>HALLUCINOGENIC II</h-art></p><p>January 2022</p><p>1080 x 1080 pixels</p></div>
         </button>
       </div>
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art6')">
-          <img class = "art-preview" src="images/illustration_icons/art1_preview.jpg">
-          <div class="art-text"><p><h-art>Green Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
+          <img class = "art-preview" src="images/illustration_icons/art6_preview.jpg">
+          <div class="art-text"><p><h-art>HALLUCINOGENIC I</h-art></p><p>January 2022</p><p>1080 x 1080 pixels</p></div>
         </button>
       </div>
+    </div>
+
+    <div class = art-section>• FROGS SECTION •</div>
+
+    <div class="artwork">
 
       <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art5')">
@@ -57,6 +144,8 @@
           <div class="art-text"><p><h-art>Green Frog</h-art></p><p>March 2021</p><p>1000 x 1000 pixels</p></div>
         </button>
       </div>
+
+    </div>
 
   <script> 
     function openArt(event, artName) {
@@ -105,11 +194,276 @@
     });
   </script>
 
-    </div>
-
       <div id="art" style="display: none">
         <img id="art-full" class="art-full" src="images/illustration_icons/art1_preview.jpg">
       </div>
+  
+  </div>
+    
+  <div class="yellow-border"></div>
+
+  <!-- CV -->
+
+  <div id="CV" class="title">
+    
+    <div class="cv-content">
+      <h4>GENERAL SKILLS</h4>
+        <hr class="break">
+          <div class="state">
+            Spoken and Written Languages
+          </div>
+          <div class="explain">
+            English, French
+          </div>
+
+          <div class="state">
+            Computer Skills
+          </div>
+          <div class="explain">
+            Microsoft Office Suite, Adobe Suite, Blender, JavaScript, Java, HTML, Maple
+          </div>
+
+          <div class="state">
+            Driver’s License
+          </div>
+          <div class="explain">
+            Class 5
+          </div>
+
+      <h4>EDUCATION</h4>
+        <hr class="break">
+          <div class="state">
+            Bachelor of Fine Arts, specialization in Computation Arts 
+            <span class="year">
+              2020 to 2025 
+            </span>
+        </div>
+          <div class="explain">
+            Concordia University, Montréal
+          </div>
+
+          <div class="state">
+            College Diploma in Natural Sciences
+            <span class="year">
+              2018 to 2020
+            </span>
+          </div>
+          <div class="explain">
+            CEGEP de Sept-Îles
+          </div>
+
+          <div class="state">
+            High School Diploma
+            <span class="year">
+              2012 to 2018 
+            </span>
+          </div>
+          <div class="explain">
+            Queen Elizabeth High School, Sept-Îles
+          </div>
+
+      <h4>ACADEMIC MERITS</h4>
+        <hr class="break">
+          <div class="state">
+            Valedictorian (Medal of Governor General) 
+            <span class="year">
+              2018
+            </span>
+        </div>
+          <div class="explain">
+            Queen Elizabeth High School, Sept-Îles
+          </div>
+
+          <div class="state">
+            Richard J. Gillis Science and Math Award (Best marks in science courses)
+            <span class="year">
+              2018
+            </span>
+          </div>
+          <div class="explain">
+            Queen Elizabeth High School, Sept-Îles
+          </div>
+
+          <div class="state">
+            Bourse de la Fondation du Cégep de Sept-Îles (Highest grades in high school)
+            <span class="year">
+              2018
+            </span>
+          </div>
+          <div class="explain">
+            CÉGEP de Sept-Îles 
+          </div>
+
+      <h4>VOLUNTEERING EXPERINCE</h4>
+        <hr class="break">
+
+        <div class="state">
+            Creative Team Assistant 
+            <span class="year">
+              2024 to 2025 
+            </span>
+        </div>
+          <div class="explain">
+          Concordia Game Development Club, Montréal 
+          </div>
+
+          <div class="state">
+            Organisational Assistant
+            <span class="year">
+              Spring 2023
+            </span>
+        </div>
+          <div class="explain">
+            Art Matters Festival, Montréal
+          </div>
+
+          <div class="state">
+            Attendant and Organizational Assistant
+            <span class="year">
+              2011 to 2018
+            </span>
+          </div>
+          <div class="explain">
+            Royal Canadian Legion, St-Bruno
+          </div>
+
+      <h4>HONORS & AWARDS</h4>
+        <hr class="break">
+          <div class="state">
+            Graphic/Illustration of the Year
+            <span class="year">
+              2024
+            </span>
+        </div>
+          <div class="explain">
+            John H. McDonald Awards for Excellence in Student Journalism - Canadian University Press
+          </div>
+
+        <h4>PROFESSIONAL EXPERIENCE </h4>
+          <hr class="break">
+
+          <div class="state">
+            2D Artist and Concept Artist 
+            <span class="year">
+              2024 to Present
+            </span>
+          </div>
+            <div class="explain">
+              WhySo Studios, Montréal
+            </div>
+
+          <div class="state">
+            Graphics Editor
+            <span class="year">
+              2024 to 2025
+            </span>
+          </div>
+            <div class="explain">
+              The Concordian, Montréal
+            </div>
+
+          <div class="state">
+            Graphic Designer
+            <span class="year">
+              Fall 2024
+            </span>
+          </div>
+            <div class="explain">
+              Walton Systems, Montréal
+            </div>
+
+            <div class="state">
+              Graphics Assistant
+              <span class="year">
+                2023 to 2024
+              </span>
+          </div>
+            <div class="explain">
+              The Concordian, Montréal
+            </div>
+
+            <div class="state">
+              2D Artist and UI/UX Artist
+              <span class="year">
+                2023 to 2024
+              </span>
+            </div>
+            <div class="explain">
+              Concordia University - Research Assistant, Montréal
+            </div>
+
+            <div class="state">
+              Car Washer
+              <span class="year">
+                Summer 2023
+              </span>
+            </div>
+            <div class="explain">
+              Iron Ore Company of Canada (IOC), Sept-Îles
+            </div>
+
+            <div class="state">
+              Information Technologies	
+              <span class="year">
+                Summer 2022
+              </span>
+            </div>
+            <div class="explain">
+              Iron Ore Company of Canada (IOC), Sept-Îles
+            </div>
+
+            <div class="state">
+              2D Artist and Concept Artist
+              <span class="year">
+                Spring 2022
+              </span>
+            </div>
+            <div class="explain">
+              Concordia University - Student Sustainability Ambassadors Program, Montréal
+            </div>
+
+            <div class="state">
+              Purchasing Agent
+              <span class="year">
+                Summer 2021
+              </span>
+            </div>
+            <div class="explain">
+              Iron Ore Company of Canada (IOC), Sept-Îles
+            </div>
+
+            <div class="state">
+              Temperature Screener
+              <span class="year">
+                Summer 2021
+              </span>
+            </div>
+            <div class="explain">
+              Iron Ore Company of Canada (IOC), Sept-Îles
+            </div>
+
+            <div class="state">
+              Hotel Receptionist
+              <span class="year">
+                2020 to 2021
+              </span>
+            </div>
+            <div class="explain">
+              Hôtel Mingan, Sept-Îles
+            </div>
+
+            <div class="state">
+              Gardener
+              <span class="year">
+                Summer 2019
+              </span>
+            </div>
+            <div class="explain">
+              Les Jardins de Gallix Inc., Sept-Îles
+            </div>
+      </div>
+
+    </div>
 
   </body>
 </html>
