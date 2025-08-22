@@ -15,18 +15,22 @@ html {
 }
 
 body {
-  margin: 0;
   overflow: hidden;
+  margin: 0;
   height: 100%;
   position: static;
 }
+
+/* .header-parking {
+  height: auto;
+} */
 
 .website-header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
-  padding: 1vmin 0 1vmin;
+  padding: 1vmin 0 0 0;
   background-color: #ffcb47;
   background-position: center;
   text-align: center;
@@ -56,12 +60,7 @@ body {
   cursor: pointer;
 }
 
-.title-button:hover {
-  background-color: #ffcb47;
-  color: #faf3dd;
-}
-
-.title-button:active, .title-button:focus {
+.title-button:focus {
   background-color: #ffcb47;
   color: #faf3dd;
   border-color: #faf3dd;
@@ -70,6 +69,7 @@ body {
 
 .white-border {
   border-top: 0.5vmin dashed #faf3dd;
+  padding: 0 0 1vmin 1vmin;
 }
 
 .yellow-border {
@@ -78,8 +78,8 @@ body {
 }
 
 .artwork-content {
-  padding-top: 14.5vmin;
-  height: calc(100vh - 14.5vmin);
+  margin: 1vmin 0 0 0;
+  height: calc(100vh - 14vmin);
   overflow-y: scroll;
 }
 
@@ -208,7 +208,7 @@ h-art {
 }
 
 .cv-content{
-  height: calc(100vh - 14.5vmin);
+  height: calc(100vh - 12vmin);
   padding: 0px 25px 25px;
   overflow-y: scroll;
   text-align: left;

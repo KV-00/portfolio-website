@@ -8,7 +8,9 @@
   <body>
     <div class="overlay"></div>
 
-    <div class="website-header">
+    <div id="parking" class="header-parking"></div>
+
+    <div id="header" class="website-header">
       <div class="website-title">
               - KEVEN VAILLANCOURT -
       </div>
@@ -16,8 +18,29 @@
       <a href="#CV" class="title-button">CV</a>
       <div class="white-border"></div>
     </div>
+    
+    <script>
+      function setEqualHeight() {
+        const div1 = document.getElementById('header');
+        const div2 = document.getElementById('parking');
 
-    <div id="artwork" class="artwork-content">
+        // Get the computed height of div1
+        const div1Height = div1.offsetHeight; 
+
+        // Set the height of div2 to div1's height
+        div2.style.height = div1Height + 'px'; 
+      }
+
+      // Call the function on page load
+      window.onload = setEqualHeight;
+
+      // Optionally, call it on window resize if content can change dynamically
+      window.onresize = setEqualHeight; 
+    </script>
+
+    <div id="artwork" class="title">
+
+    <div class="artwork-content">
 
     <div class = art-section>• MOCKUPS SECTION •</div>
 
@@ -197,7 +220,7 @@
       <div id="art" style="display: none">
         <img id="art-full" class="art-full" src="images/illustration_icons/art1_preview.jpg">
       </div>
-  
+    </div>
   </div>
     
   <div class="yellow-border"></div>
