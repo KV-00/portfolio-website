@@ -21,10 +21,6 @@ body {
   position: static;
 }
 
-/* .header-parking {
-  height: auto;
-} */
-
 .website-header {
   position: fixed;
   top: 0;
