@@ -39,8 +39,9 @@ body {
 }
 
 .title-button {
-  border: 0px solid;
+  border: 5px solid;
   font-weight: bold;
+  width: 125px;
   border-radius: 25px;
   background-color: #faf3dd;
   color: #ffcb47;
@@ -75,7 +76,7 @@ body {
 }
 
 .artwork-content {
-  margin: 1vmin 0 0 0;
+  padding: 1vmin 0 0 0;
   height: calc(100vh - 14vmin);
   overflow-y: scroll;
 }
@@ -106,7 +107,6 @@ body {
 .art-container {
   position: relative;
   display: inline-block;
-  
 }
 
 .art-full {
@@ -205,12 +205,12 @@ h-art {
 }
 
 .cv-content{
-  height: calc(100vh - 12vmin);
-  padding: 0px 25px 25px;
-  overflow-y: scroll;
+  height: calc(100vh - 18vmin);
+  padding: 1vmin 25px 50px 25px;
   text-align: left;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
 }
 
 h3 {
@@ -223,7 +223,7 @@ h3 {
 h4 {
   color: #3f3a45;
   font-size: 1.25em;
-  margin: 50px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
   font-weight: bold;
 }
 
@@ -249,5 +249,27 @@ h4 {
 }
 
 .title {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 12.5vmin;
+}
+
+.contact-content{
+  height: calc(100vh - 13vmin);
+  overflow-y: hidden;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.contact-button {
+  margin: 25px;
+  width: 80%;
+  max-width: 23vh;
+  height: auto;
+  transition: 0.25s;
+}
+
+.contact-button:hover {
+  filter: brightness(110%)  saturate(80%);
 }

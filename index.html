@@ -15,6 +15,7 @@
       </div>
       <a href="#artwork" class="title-button">ARTWORK</a>
       <a href="#CV" class="title-button">CV</a>
+      <a href="#contact" class="title-button">CONTACT</a>
       <div class="white-border"></div>
     </div>
     
@@ -34,56 +35,9 @@
       window.onload = setEqualHeight;
     </script>
 
-    <div id="artwork" class="title">
-
+  <div id="artwork" class="title">
+    
     <div id="parking" class="header-parking"></div>
-
-    <script> 
-    function openArt(event, artName) {
-      // Open and close the artwork and set its corresponding image source
-      var art = document.getElementById("art");
-      const artSource = 'images/illustration_full/' + artName + '.jpg';
-      document.getElementById('art-full').src = artSource;
-      // Toggle the display of the artwork
-      if (art.style.display === "none" || art.style.display === "") {
-        art.style.display = "block";
-        document.querySelector('.artwork').classList.add('active');
-        document.querySelector('.art-full').classList.add('art-appear');
-        document.querySelector('.art-full').classList.remove('art-disappear');
-        document.querySelector('.overlay').style.display = "block";
-        document.querySelector('.overlay').classList.add('overlay-appear');
-        document.querySelector('body').style.overflow = "hidden";
-      } else {
-        document.querySelector('.artwork').classList.remove('active');
-        document.querySelector('.art-full').classList.remove('art-appear');
-        document.querySelector('.art-full').classList.add('art-disappear');
-        document.querySelector('.overlay').style.display = "none";
-        document.querySelector('.overlay').classList.remove('overlay-appear');
-        document.querySelector('body').style.overflow = "auto";
-        setTimeout(function() { 
-          art.style.display = "none";
-        }, 250);
-      }
-      // Prevent event propagation so clicking on the button itself won't trigger the close logic
-      event.stopPropagation();
-    }
-    // Close the image when clicking anywhere on the screen
-    document.addEventListener('click', function(event) {
-      var art = document.getElementById("art");
-      // Check if the target is not the artwork or any of the buttons
-      if (!art.contains(event.target) && !event.target.closest('.button-class')) {
-        document.querySelector('.artwork').classList.remove('active');
-        document.querySelector('.art-full').classList.remove('art-appear');
-        document.querySelector('.art-full').classList.add('art-disappear');
-        document.querySelector('.overlay').style.display = "none";
-        document.querySelector('.overlay').classList.remove('overlay-appear');
-        document.querySelector('body').style.overflow = "auto";
-        setTimeout(function() { 
-          art.style.display = "none";
-        }, 250);
-      }
-    });
-  </script>
 
     <div class="artwork-content">
 
@@ -713,6 +667,53 @@
 
     </div>
 
+  <script> 
+    function openArt(event, artName) {
+      // Open and close the artwork and set its corresponding image source
+      var art = document.getElementById("art");
+      const artSource = 'images/illustration_full/' + artName + '.jpg';
+      document.getElementById('art-full').src = artSource;
+      // Toggle the display of the artwork
+      if (art.style.display === "none" || art.style.display === "") {
+        art.style.display = "block";
+        document.querySelector('.artwork').classList.add('active');
+        document.querySelector('.art-full').classList.add('art-appear');
+        document.querySelector('.art-full').classList.remove('art-disappear');
+        document.querySelector('.overlay').style.display = "block";
+        document.querySelector('.overlay').classList.add('overlay-appear');
+        document.querySelector('body').style.overflow = "hidden";
+      } else {
+        document.querySelector('.artwork').classList.remove('active');
+        document.querySelector('.art-full').classList.remove('art-appear');
+        document.querySelector('.art-full').classList.add('art-disappear');
+        document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.overlay').classList.remove('overlay-appear');
+        document.querySelector('body').style.overflow = "auto";
+        setTimeout(function() { 
+          art.style.display = "none";
+        }, 250);
+      }
+      // Prevent event propagation so clicking on the button itself won't trigger the close logic
+      event.stopPropagation();
+    }
+    // Close the image when clicking anywhere on the screen
+    document.addEventListener('click', function(event) {
+      var art = document.getElementById("art");
+      // Check if the target is not the artwork or any of the buttons
+      if (!art.contains(event.target) && !event.target.closest('.button-class')) {
+        document.querySelector('.artwork').classList.remove('active');
+        document.querySelector('.art-full').classList.remove('art-appear');
+        document.querySelector('.art-full').classList.add('art-disappear');
+        document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.overlay').classList.remove('overlay-appear');
+        document.querySelector('body').style.overflow = "auto";
+        setTimeout(function() { 
+          art.style.display = "none";
+        }, 250);
+      }
+    });
+  </script>
+
       <div id="art" style="display: none">
         <img id="art-full" class="art-full" src="images/illustration_icons/art1_preview.jpg">
       </div>
@@ -726,305 +727,321 @@
   <div id="CV" class="title">
     
     <div class="cv-content">
-      <h4>GENERAL SKILLS</h4>
-        <hr class="break">
-          <div class="state">
-            Spoken and Written Languages
-          </div>
-          <div class="explain">
-            English, French
-          </div>
 
-          <div class="state">
-            Computer Skills
-          </div>
-          <div class="explain">
-            Microsoft Office Suite, Adobe Suite, Blender, JavaScript, Java, HTML, Maple
-          </div>
-
-          <div class="state">
-            Driver’s License
-          </div>
-          <div class="explain">
-            Class 5
-          </div>
-
-      <h4>EDUCATION</h4>
-        <hr class="break">
-          <div class="state">
-            Bachelor of Fine Arts, specialization in Computation Arts 
-            <span class="year">
-              2020 to 2025 
-            </span>
+    <h4>GENERAL SKILLS</h4>
+      <hr class="break">
+        <div class="state">
+          Spoken and Written Languages
         </div>
-          <div class="explain">
-            Concordia University, Montréal
-          </div>
-
-          <div class="state">
-            College Diploma in Natural Sciences
-            <span class="year">
-              2018 to 2020
-            </span>
-          </div>
-          <div class="explain">
-            CEGEP de Sept-Îles
-          </div>
-
-          <div class="state">
-            High School Diploma
-            <span class="year">
-              2012 to 2018 
-            </span>
-          </div>
-          <div class="explain">
-            Queen Elizabeth High School, Sept-Îles
-          </div>
-
-      <h4>ACADEMIC MERITS</h4>
-        <hr class="break">
-          <div class="state">
-            Valedictorian (Medal of Governor General) 
-            <span class="year">
-              2018
-            </span>
+        <div class="explain">
+          English, French
         </div>
-          <div class="explain">
-            Queen Elizabeth High School, Sept-Îles
-          </div>
-
-          <div class="state">
-            Richard J. Gillis Science and Math Award (Best marks in science courses)
-            <span class="year">
-              2018
-            </span>
-          </div>
-          <div class="explain">
-            Queen Elizabeth High School, Sept-Îles
-          </div>
-
-          <div class="state">
-            Bourse de la Fondation du Cégep de Sept-Îles (Highest grades in high school)
-            <span class="year">
-              2018
-            </span>
-          </div>
-          <div class="explain">
-            CÉGEP de Sept-Îles 
-          </div>
-      
-      <h4>HONORS & AWARDS</h4>
-        <hr class="break">
-          <div class="state">
-            Graphic/Illustration of the Year
-            <span class="year">
-              2024
-            </span>
-        </div>
-          <div class="explain">
-            John H. McDonald Awards for Excellence in Student Journalism - Canadian University Press
-          </div>
-
-      <h4>VOLUNTEERING EXPERINCE</h4>
-        <hr class="break">
 
         <div class="state">
-            Linkedin Moderator
-            <span class="year">
-              2025 
-            </span>
+          Computer Skills
         </div>
-          <div class="explain">
-          Concordia Game Development Club, Montréal 
-          </div>
+        <div class="explain">
+          Microsoft Office Suite, Adobe Suite, Blender, JavaScript, Java, HTML, Maple
+        </div>
 
         <div class="state">
-            Creative Team Assistant 
-            <span class="year">
-              2024 to 2025 
-            </span>
+          Driver’s License
         </div>
-          <div class="explain">
-          Concordia Game Development Club, Montréal 
-          </div>
-
-          <div class="state">
-            Organisational Assistant
-            <span class="year">
-              Spring 2023
-            </span>
+        <div class="explain">
+          Class 5
         </div>
-          <div class="explain">
-            Art Matters Festival, Montréal
-          </div>
 
-          <div class="state">
-            Attendant and Organizational Assistant
-            <span class="year">
-              2011 to 2018
-            </span>
-          </div>
-          <div class="explain">
-            Royal Canadian Legion, St-Bruno
-          </div>
-
-      <h4>EXHIBITION EXPERIENCE</h4>
-        <hr class="break">
-
-          <div class="state">
-            Cash Clown Showcase
-            <span class="year">
-              August 2025
-            </span>
-          </div>
-            <div class="explain">
-              Canadian National Exhibition (CNE), Toronto
-            </div>
-
-          <div class="state">
-            Cash Clown Showcase
-            <span class="year">
-              June 2025
-            </span>
-          </div>
-            <div class="explain">
-              MAZERU, Montreal
-            </div>
-
-          <div class="state">
-            FROGDROMEDA Showcase
-            <span class="year">
-              April 2024
-            </span>
-          </div>
-            <div class="explain">
-              FUSION Exhibition, Montreal
-            </div>
-
-        <h4>PROFESSIONAL EXPERIENCE </h4>
-          <hr class="break">
-
-          <div class="state">
-            2D Artist and Concept Artist 
-            <span class="year">
-              2024 to 2025
-            </span>
-          </div>
-            <div class="explain">
-              WhySo Studios, Montréal
-            </div>
-
-          <div class="state">
-            Graphics Editor
-            <span class="year">
-              2024 to 2025
-            </span>
-          </div>
-            <div class="explain">
-              The Concordian, Montréal
-            </div>
-
-          <div class="state">
-            Graphic Designer
-            <span class="year">
-              Fall 2024
-            </span>
-          </div>
-            <div class="explain">
-              Walton Systems, Montréal
-            </div>
-
-            <div class="state">
-              Graphics Assistant
-              <span class="year">
-                2023 to 2024
-              </span>
-          </div>
-            <div class="explain">
-              The Concordian, Montréal
-            </div>
-
-            <div class="state">
-              2D Artist and UI/UX Artist
-              <span class="year">
-                2023 to 2024
-              </span>
-            </div>
-            <div class="explain">
-              Concordia University - Research Assistant, Montréal
-            </div>
-
-            <div class="state">
-              Car Washer
-              <span class="year">
-                Summer 2023
-              </span>
-            </div>
-            <div class="explain">
-              Iron Ore Company of Canada (IOC), Sept-Îles
-            </div>
-
-            <div class="state">
-              Information Technologies	
-              <span class="year">
-                Summer 2022
-              </span>
-            </div>
-            <div class="explain">
-              Iron Ore Company of Canada (IOC), Sept-Îles
-            </div>
-
-            <div class="state">
-              2D Artist and Concept Artist
-              <span class="year">
-                Spring 2022
-              </span>
-            </div>
-            <div class="explain">
-              Concordia University - Student Sustainability Ambassadors Program, Montréal
-            </div>
-
-            <div class="state">
-              Purchasing Agent
-              <span class="year">
-                Summer 2021
-              </span>
-            </div>
-            <div class="explain">
-              Iron Ore Company of Canada (IOC), Sept-Îles
-            </div>
-
-            <div class="state">
-              Temperature Screener
-              <span class="year">
-                Summer 2021
-              </span>
-            </div>
-            <div class="explain">
-              Iron Ore Company of Canada (IOC), Sept-Îles
-            </div>
-
-            <div class="state">
-              Hotel Receptionist
-              <span class="year">
-                2020 to 2021
-              </span>
-            </div>
-            <div class="explain">
-              Hôtel Mingan, Sept-Îles
-            </div>
-
-            <div class="state">
-              Gardener
-              <span class="year">
-                Summer 2019
-              </span>
-            </div>
-            <div class="explain">
-              Les Jardins de Gallix Inc., Sept-Îles
-            </div>
+    <h4>EDUCATION</h4>
+      <hr class="break">
+        <div class="state">
+          Bachelor of Fine Arts, specialization in Computation Arts 
+          <span class="year">
+            2020 to 2025 
+          </span>
       </div>
+        <div class="explain">
+          Concordia University, Montréal
+        </div>
+
+        <div class="state">
+          College Diploma in Natural Sciences
+          <span class="year">
+            2018 to 2020
+          </span>
+        </div>
+        <div class="explain">
+          CEGEP de Sept-Îles
+        </div>
+
+        <div class="state">
+          High School Diploma
+          <span class="year">
+            2012 to 2018 
+          </span>
+        </div>
+        <div class="explain">
+          Queen Elizabeth High School, Sept-Îles
+        </div>
+
+    <h4>ACADEMIC MERITS</h4>
+      <hr class="break">
+        <div class="state">
+          Valedictorian (Medal of Governor General) 
+          <span class="year">
+            2018
+          </span>
+      </div>
+        <div class="explain">
+          Queen Elizabeth High School, Sept-Îles
+        </div>
+
+        <div class="state">
+          Richard J. Gillis Science and Math Award (Best marks in science courses)
+          <span class="year">
+            2018
+          </span>
+        </div>
+        <div class="explain">
+          Queen Elizabeth High School, Sept-Îles
+        </div>
+
+        <div class="state">
+          Bourse de la Fondation du Cégep de Sept-Îles (Highest grades in high school)
+          <span class="year">
+            2018
+          </span>
+        </div>
+        <div class="explain">
+          CÉGEP de Sept-Îles 
+        </div>
+    
+    <h4>HONORS & AWARDS</h4>
+      <hr class="break">
+        <div class="state">
+          Graphic/Illustration of the Year
+          <span class="year">
+            2024
+          </span>
+      </div>
+        <div class="explain">
+          John H. McDonald Awards for Excellence in Student Journalism - Canadian University Press
+        </div>
+
+    <h4>VOLUNTEERING EXPERINCE</h4>
+      <hr class="break">
+
+      <div class="state">
+          Linkedin Moderator
+          <span class="year">
+            2025 
+          </span>
+      </div>
+        <div class="explain">
+        Concordia Game Development Club, Montréal 
+        </div>
+
+      <div class="state">
+          Creative Team Assistant 
+          <span class="year">
+            2024 to 2025 
+          </span>
+      </div>
+        <div class="explain">
+        Concordia Game Development Club, Montréal 
+        </div>
+
+        <div class="state">
+          Organisational Assistant
+          <span class="year">
+            Spring 2023
+          </span>
+      </div>
+        <div class="explain">
+          Art Matters Festival, Montréal
+        </div>
+
+        <div class="state">
+          Attendant and Organizational Assistant
+          <span class="year">
+            2011 to 2018
+          </span>
+        </div>
+        <div class="explain">
+          Royal Canadian Legion, St-Bruno
+        </div>
+
+    <h4>EXHIBITION EXPERIENCE</h4>
+      <hr class="break">
+
+        <div class="state">
+          Cash Clown Showcase
+          <span class="year">
+            August 2025
+          </span>
+        </div>
+          <div class="explain">
+            Canadian National Exhibition (CNE), Toronto
+          </div>
+
+        <div class="state">
+          Cash Clown Showcase
+          <span class="year">
+            June 2025
+          </span>
+        </div>
+          <div class="explain">
+            MAZERU, Montreal
+          </div>
+
+        <div class="state">
+          FROGDROMEDA Showcase
+          <span class="year">
+            April 2024
+          </span>
+        </div>
+          <div class="explain">
+            FUSION Exhibition, Montreal
+          </div>
+
+      <h4>PROFESSIONAL EXPERIENCE </h4>
+        <hr class="break">
+
+        <div class="state">
+          2D Artist and Concept Artist 
+          <span class="year">
+            2024 to 2025
+          </span>
+        </div>
+          <div class="explain">
+            WhySo Studios, Montréal
+          </div>
+
+        <div class="state">
+          Graphics Editor
+          <span class="year">
+            2024 to 2025
+          </span>
+        </div>
+          <div class="explain">
+            The Concordian, Montréal
+          </div>
+
+        <div class="state">
+          Graphic Designer
+          <span class="year">
+            Fall 2024
+          </span>
+        </div>
+          <div class="explain">
+            Walton Systems, Montréal
+          </div>
+
+          <div class="state">
+            Graphics Assistant
+            <span class="year">
+              2023 to 2024
+            </span>
+        </div>
+          <div class="explain">
+            The Concordian, Montréal
+          </div>
+
+          <div class="state">
+            2D Artist and UI/UX Artist
+            <span class="year">
+              2023 to 2024
+            </span>
+          </div>
+          <div class="explain">
+            Concordia University - Research Assistant, Montréal
+          </div>
+
+          <div class="state">
+            Car Washer
+            <span class="year">
+              Summer 2023
+            </span>
+          </div>
+          <div class="explain">
+            Iron Ore Company of Canada (IOC), Sept-Îles
+          </div>
+
+          <div class="state">
+            Information Technologies	
+            <span class="year">
+              Summer 2022
+            </span>
+          </div>
+          <div class="explain">
+            Iron Ore Company of Canada (IOC), Sept-Îles
+          </div>
+
+          <div class="state">
+            2D Artist and Concept Artist
+            <span class="year">
+              Spring 2022
+            </span>
+          </div>
+          <div class="explain">
+            Concordia University - Student Sustainability Ambassadors Program, Montréal
+          </div>
+
+          <div class="state">
+            Purchasing Agent
+            <span class="year">
+              Summer 2021
+            </span>
+          </div>
+          <div class="explain">
+            Iron Ore Company of Canada (IOC), Sept-Îles
+          </div>
+
+          <div class="state">
+            Temperature Screener
+            <span class="year">
+              Summer 2021
+            </span>
+          </div>
+          <div class="explain">
+            Iron Ore Company of Canada (IOC), Sept-Îles
+          </div>
+
+          <div class="state">
+            Hotel Receptionist
+            <span class="year">
+              2020 to 2021
+            </span>
+          </div>
+          <div class="explain">
+            Hôtel Mingan, Sept-Îles
+          </div>
+
+          <div class="state">
+            Gardener
+            <span class="year">
+              Summer 2019
+            </span>
+          </div>
+          <div class="explain">
+            Les Jardins de Gallix Inc., Sept-Îles
+          </div>
     </div>
+  </div>
+
+  <div class="yellow-border"></div>
+
+  <!-- CONTACT -->
+
+  <div id="contact" class="title">
+    
+    <div class="contact-content">
+      <a href="mailto:vaillancourkeven@gmail.com"><img src="images\contact_icons\contact1.png" class = "contact-button" alt="Email"></a>
+      <a href="mailto:vaillancourkeven@gmail.com"><img src="images\contact_icons\contact2.png" class = "contact-button" alt="Email"></a>
+      <a href="mailto:vaillancourkeven@gmail.com"><img src="images\contact_icons\contact3.png" class = "contact-button" alt="Email"></a>
+      <a href="mailto:vaillancourkeven@gmail.com"><img src="images\contact_icons\contact4.png" class = "contact-button" alt="Email"></a>
+      <a href="mailto:vaillancourkeven@gmail.com"><img src="images\contact_icons\contact5.png" class = "contact-button" alt="Email"></a>
+    </div>
+  </div>
 
   </body>
 </html>
