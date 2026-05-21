@@ -382,13 +382,6 @@
       </div>
 
       <div class="art-container">
-        <button class="art-links" onclick="openArt(event, 'art37')">
-          <img class = "art-preview" src="images/illustration_icons/art37_preview.jpg">
-          <div class="art-text"><p><h-art>Dark Star Skybox Concept</h-art></p><p>June 2025</p><p>2800 x 1880 pixels</p></div>
-        </button>
-      </div>
-
-      <div class="art-container">
         <button class="art-links" onclick="openArt(event, 'art36')">
           <img class = "art-preview" src="images/illustration_icons/art36_preview.jpg">
           <div class="art-text"><p><h-art>Pomponne Artwork 2</h-art></p><p>December 2024</p><p>1080 x 1080 pixels</p></div>
@@ -723,6 +716,142 @@
     <div class="artwork-content">
 
     <p></p>
+
+    <div class = art-section>• DARK STAR TEXTURES •</div>
+
+    <div class="videogames">
+
+      <div class="art-container">
+        <button class="art-links" onclick="openGIF(event, 'vg35')">
+          <img class = "art-preview" src="images/illustration_icons/vg35_preview.jpg">
+          <div class="art-text"><p><h-art>Lumen Edge Concept art</h-art></p><p>December 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openGIF(event, 'vg36')">
+          <img class = "art-preview" src="images/illustration_icons/vg36_preview.jpg">
+          <div class="art-text"><p><h-art>Tandem Concept art</h-art></p><p>January 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openGIF(event, 'vg37')">
+          <img class = "art-preview" src="images/illustration_icons/vg37_preview.jpg">
+          <div class="art-text"><p><h-art>Taswell Concept art</h-art></p><p>April 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openGIF(event, 'vg38')">
+          <img class = "art-preview" src="images/illustration_icons/vg38_preview.jpg">
+          <div class="art-text"><p><h-art>Dreiton Concept art</h-art></p><p>July 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openGIF(event, 'vg39')">
+          <img class = "art-preview" src="images/illustration_icons/vg39_preview.jpg">
+          <div class="art-text"><p><h-art>Mobula Concept art</h-art></p><p>November 2025</p></div>
+        </button>
+      </div>
+
+    </div>
+
+  <script> 
+    function openGIF(event, artName) {
+      // Open and close the artwork and set its corresponding image source
+      var art = document.getElementById("art");
+      const artSource = 'images/illustration_full/' + artName + '.gif';
+      document.getElementById('art-full').src = artSource;
+      // Toggle the display of the artwork
+      if (art.style.display === "none" || art.style.display === "") {
+        art.style.display = "block";
+        document.querySelector('.artwork').classList.add('active');
+        document.querySelector('.art-full').classList.add('art-appear');
+        document.querySelector('.art-full').classList.remove('art-disappear');
+        document.querySelector('.overlay').style.display = "block";
+        document.querySelector('.overlay').classList.add('overlay-appear');
+        document.querySelector('body').style.overflow = "hidden";
+      } else {
+        document.querySelector('.artwork').classList.remove('active');
+        document.querySelector('.art-full').classList.remove('art-appear');
+        document.querySelector('.art-full').classList.add('art-disappear');
+        document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.overlay').classList.remove('overlay-appear');
+        document.querySelector('body').style.overflow = "auto";
+        setTimeout(function() { 
+          art.style.display = "none";
+        }, 250);
+      }
+      // Prevent event propagation so clicking on the button itself won't trigger the close logic
+      event.stopPropagation();
+    }
+    // Close the image when clicking anywhere on the screen
+    document.addEventListener('click', function(event) {
+      var art = document.getElementById("art");
+      // Check if the target is not the artwork or any of the buttons
+      if (!art.contains(event.target) && !event.target.closest('.button-class')) {
+        document.querySelector('.artwork').classList.remove('active');
+        document.querySelector('.art-full').classList.remove('art-appear');
+        document.querySelector('.art-full').classList.add('art-disappear');
+        document.querySelector('.overlay').style.display = "none";
+        document.querySelector('.overlay').classList.remove('overlay-appear');
+        document.querySelector('body').style.overflow = "auto";
+        setTimeout(function() { 
+          art.style.display = "none";
+        }, 250);
+      }
+    });
+  </script>
+
+    <div class = art-section>• DARK STAR CONCEPT ART •</div>
+
+    <div class="videogames">
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'vg29')">
+          <img class = "art-preview" src="images/illustration_icons/vg29_preview.jpg">
+          <div class="art-text"><p><h-art>Starfighter Concept art</h-art></p><p>January 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'vg30')">
+          <img class = "art-preview" src="images/illustration_icons/vg30_preview.jpg">
+          <div class="art-text"><p><h-art>Taswell Concept art</h-art></p><p>April 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'vg31')">
+          <img class = "art-preview" src="images/illustration_icons/vg31_preview.jpg">
+          <div class="art-text"><p><h-art>Dreiton Concept art</h-art></p><p>July 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'vg32')">
+          <img class = "art-preview" src="images/illustration_icons/vg32_preview.jpg">
+          <div class="art-text"><p><h-art>Mobula Concept art</h-art></p><p>November 2025</p></div>
+        </button>
+      </div>
+
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'vg33')">
+          <img class = "art-preview" src="images/illustration_icons/vg33_preview.jpg">
+          <div class="art-text"><p><h-art>Skybox 1 Concept art</h-art></p><p>May 2025</p></div>
+        </button>
+      </div>
+  
+      <div class="art-container">
+        <button class="art-links" onclick="openArt(event, 'vg34')">
+          <img class = "art-preview" src="images/illustration_icons/vg34_preview.jpg">
+          <div class="art-text"><p><h-art>Skybox 2 Concept art</h-art></p><p>March 2026</p></div>
+        </button>
+      </div>
+
+    </div>
 
     <div class = art-section>• CASH CLOWN •</div>
 
