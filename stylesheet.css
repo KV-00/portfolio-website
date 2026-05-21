@@ -75,6 +75,30 @@ body {
   margin: 7.5px;
 }
 
+.videogames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.videogames button {
+  background-color: inherit;
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.25s;
+}
+
+.videogames.active {
+  pointer-events: none;
+}
+
+.videogames button:hover .art-preview{
+  filter: brightness(50%);
+}
+
 .artwork-content {
   padding: 1vmin 0 0 0;
   height: calc(100vh - 14vmin);
